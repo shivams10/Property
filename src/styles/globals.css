@@ -19,3 +19,7 @@ body {
   border-radius: 10px;
   height: 260px !important;
 }
+
+g {
+  fill: white !important;
+}
