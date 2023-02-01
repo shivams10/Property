@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write \"{,!(.next)/**/}*.{js, jsx}\""
+    "format": "prettier --write \"./**/*.{js,jsx,json}\""
   },
   "dependencies": {
     "@chakra-ui/react": "^2.4.9",
