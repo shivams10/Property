@@ -1,0 +1,25 @@
+body {
+  background: #19191b !important;
+  color: white !important;
+}
+
+.background-box {
+  background: #4e4e50 !important;
+}
+
+.secondary-color {
+  background: #c3073f !important;
+}
+
+.secondary-color:hover {
+  background: #950740 !important;
+}
+
+.card-image {
+  border-radius: 10px;
+  height: 260px !important;
+}
+
+g {
+  fill: white !important;
+}
