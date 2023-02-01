@@ -53,7 +53,7 @@ export const Property = ({
                 {isVerified && <GoVerified />}
               </Box>
               <Text fontWeight="bold" fontSize="lg">
-                AED {millify(price)} {rentFrequency && `/${rentFrequency}`}
+                ₹ {millify(price)} {rentFrequency && `/ ${rentFrequency}`}
               </Text>
             </Flex>
             <Box>
@@ -66,8 +66,9 @@ export const Property = ({
             justifyContent="space-between"
             w="250px"
           >
-            {rooms} <FaBed /> | {baths} <FaBath /> | {millify(area)} | sqft{" "}
-            <BsGridFill />
+            {rooms} <FaBed color="#9AE6B4" /> | {baths}{" "}
+            <FaBath color="#9AE6B4" /> |{millify(area)} | sqft{" "}
+            <BsGridFill color="#9AE6B4" />
           </Flex>
           <Text fontSize="lg" color="whiteAlpha.800">
             {title?.length > 30 ? `${title?.substring(0, 30)}...` : title}

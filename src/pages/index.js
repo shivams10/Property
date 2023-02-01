@@ -8,7 +8,7 @@ import { Property } from "components/property";
 
 export default function Home({ propertyForSale, propertyForRent }) {
   return (
-    <Box>
+    <Box maxWidth="1280px" m="auto">
       <Banner
         purpose="RENT A HOME"
         title1="Rental Homes for"
@@ -20,7 +20,7 @@ export default function Home({ propertyForSale, propertyForRent }) {
         imageUrl={BannerImage1}
       />
       <Flex flexWrap="wrap" gap="5" justifyContent="center">
-        {propertyForRent.map((property) => (
+        {propertyForRent?.map((property) => (
           <Property property={property} key={property.id} />
         ))}
       </Flex>
@@ -35,7 +35,7 @@ export default function Home({ propertyForSale, propertyForRent }) {
         imageUrl={BannerImage2}
       />
       <Flex flexWrap="wrap" gap="5" justifyContent="center">
-        {propertyForSale.map((property) => (
+        {propertyForSale?.map((property) => (
           <Property property={property} key={property.id} />
         ))}
       </Flex>

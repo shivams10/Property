@@ -15,7 +15,7 @@ import Link from "next/link";
 
 export function Navbar() {
   return (
-    <Flex p="2" borderBottom="1px" borderColor="gray.100">
+    <Flex py="2" px="20" borderBottom="1px" borderColor="gray.500">
       <Box fontSize="3xl" fontWeight="bold">
         <Link href="/" paddingleft="2">
           GharDekho
