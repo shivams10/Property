@@ -23,48 +23,41 @@ export const Property = ({
   },
 }) => {
   return (
-    <Link
-      href={`/property/${externalId}`}
-      passHref
-      style={{ textDecoration: "none" }}
-    >
+    <Link href={`/property/${externalId}`} passHref>
       <Flex
         flexWrap="wrap"
-        w="420px"
-        padding="10"
-        paddingTop="20"
-        margin="10"
-        justifyContent="center"
+        w="410px"
+        padding="5"
         cursor="pointer"
+        justifyContent="flex-start"
         className="background-box"
         borderRadius="10px"
       >
-        <Box>
+        <Box height="290">
           <Image
             src={coverPhoto ? coverPhoto?.url : DefaultImage}
             alt="house"
             width="400"
             height="260"
+            className="card-image"
           />
         </Box>
-        <Box w="full" color="white">
+        <Box w="full">
           <Flex
             paddingTop="2"
             alignItems="center"
             justifyContent="space-between"
           >
             <Flex alignItems="center">
-              <Box paddingRight="3">{isVerified && <GoVerified />}</Box>
+              <Box paddingRight="3" color="green.200">
+                {isVerified && <GoVerified />}
+              </Box>
               <Text fontWeight="bold" fontSize="lg">
                 AED {millify(price)} {rentFrequency && `/${rentFrequency}`}
               </Text>
             </Flex>
             <Box>
-              <Avatar
-                width="120px"
-                height="50px"
-                src={agency?.logo?.url}
-              ></Avatar>
+              <Avatar size="sm" src={agency?.logo?.url}></Avatar>
             </Box>
           </Flex>
           <Flex
@@ -76,7 +69,7 @@ export const Property = ({
             {rooms} <FaBed /> | {baths} <FaBath /> | {millify(area)} | sqft{" "}
             <BsGridFill />
           </Flex>
-          <Text fontSize="lg">
+          <Text fontSize="lg" color="whiteAlpha.800">
             {title?.length > 30 ? `${title?.substring(0, 30)}...` : title}
           </Text>
         </Box>

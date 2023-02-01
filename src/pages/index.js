@@ -19,14 +19,14 @@ export default function Home({ propertyForSale, propertyForRent }) {
         linkName="/search?purpose=for-rent"
         imageUrl={BannerImage1}
       />
-      <Flex flexWrap="wrap">
+      <Flex flexWrap="wrap" gap="5" justifyContent="center">
         {propertyForRent.map((property) => (
           <Property property={property} key={property.id} />
         ))}
       </Flex>
       <Banner
         purpose="BUY A HOME"
-        title1="Find, Buy & OWn Your"
+        title1="Find, Buy & Own Your"
         title2="Dream Home"
         description1="Explore Apartments, Villas, Homes"
         description2="and mpre"
@@ -34,7 +34,11 @@ export default function Home({ propertyForSale, propertyForRent }) {
         linkName="/search?purpose=for-sale"
         imageUrl={BannerImage2}
       />
-      {/* {propertyForSale.map((property) => <Property property={property} key={property.id} />)} */}
+      <Flex flexWrap="wrap" gap="5" justifyContent="center">
+        {propertyForSale.map((property) => (
+          <Property property={property} key={property.id} />
+        ))}
+      </Flex>
     </Box>
   );
 }

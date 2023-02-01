@@ -1,16 +1,21 @@
 body {
-  background: #1a1a1d;
-  color: white;
+  background: #1a1a1d !important;
+  color: white !important;
 }
 
 .background-box {
-  background: #4e4e50;
+  background: #4e4e50 !important;
 }
 
 .secondary-color {
-  background: #c3073f;
+  background: #c3073f !important;
 }
 
 .secondary-color:hover {
-  background: #950740;
+  background: #950740 !important;
+}
+
+.card-image {
+  border-radius: 10px;
+  height: 260px !important;
 }
