@@ -23,7 +23,7 @@ export default function Search({ properties }) {
         justifyContent="center"
         alignItems="center"
         marginTop="10"
-        borderRadius="10px"
+        borderTopRadius="10px"
         onClick={() => setSearchFilter((prevFilters) => !prevFilters)}
       >
         <Text>Search Property By Filters</Text>
